@@ -37,6 +37,7 @@ POST Register User
 }
 ```
 #
+
 POST Login User
  ```sh
 {
@@ -47,9 +48,9 @@ POST Login User
 #
 
 PUT User
-
--Bearer Token <br />
--Param userId
+Diperlukan:
+- Bearer Token <br />
+- Param userId
  ```sh
 {
     "email": "string",
@@ -59,7 +60,7 @@ PUT User
 #
 DELETE User
 
--Authorization: Bearer Token
+- Authorization: Bearer Token
 
 > Note: Untuk method PUT dan DELETE diperlukan autorisasi, yang mana memerlukan Bearer Token untuk dimasukkan terlebih dahulu. Token didapatkan melalui response pengguna saat melakukan login.
 #
@@ -78,8 +79,8 @@ DELETE User
 ###### Prosedur request photos
 
 POST Photo
-
--Bearer Token
+Diperlukan:
+- Bearer Token
  ```sh
 {
     "title": "string",
@@ -88,15 +89,17 @@ POST Photo
 }
 ```
 #
-GET Photo
 
--Bearer Token
+GET Photo
+Diperlukan:
+- Bearer Token
 
 #
-PUT Photo
 
--Bearer Token  <br />
--Param photoId
+PUT Photo
+Diperlukan:
+- Bearer Token  <br />
+- Param photoId
  ```sh
 {
     "title": "string",
@@ -105,10 +108,11 @@ PUT Photo
 }
 ```
 #
-DELETE 
 
--Bearer Token  <br />
--Param PhotoId
+DELETE 
+Diperlukan:
+- Bearer Token  <br />
+- Param PhotoId
 > Note: Seluruh method diperlukan autorisasi, yang mana perlu memasukan Bearer Token terlebih dahulu. Token didapatkan melalui response pengguna saat melakukan login. Untuk method PUT dan DELETE hanya bisa dilakukan oleh pengguna yang mengunggah foto dan perlu menyertakan parameter Id foto pada URL.
 #
 
@@ -126,32 +130,34 @@ DELETE
 ###### Prosedur request comments
 
 POST Comment
-
--Bearer Token
+Diperlukan:
+- Bearer Token
  ```sh
 {
     "message": "string",
     "photo_id": integer
 }
 ```
+
 #
 GET Comment
-
--Bearer Token
+Diperlukan:
+- Bearer Token
 
 #
 PUT Comment
-
--Bearer Token  <br />
--Param commentId
+Diperlukan:
+- Bearer Token  <br />
+- Param commentId
  ```sh
 {
     "message": "string"
 }
 ```
+
 #
 DELETE 
-
+Diperlukan:
 -Bearer Token  <br />
 -Param commentId
 
@@ -172,8 +178,8 @@ DELETE
 ###### Prosedur request socialmedias
 
 POST SocialMedia
-
--Bearer Token
+Diperlukan:
+- Bearer Token
  ```sh
 {
     "name": "string",
@@ -182,14 +188,14 @@ POST SocialMedia
 ```
 #
 GET SocialMedia
-
--Bearer Token
+Diperlukan:
+- Bearer Token
 
 #
 PUT SocialMedia
-
--Bearer Token  <br />
--Param socialMediaId
+Diperlukan:
+- Bearer Token  <br />
+- Param socialMediaId
  ```sh
 {
     "name": "string",
@@ -197,10 +203,10 @@ PUT SocialMedia
 }
 ```
 #
-DELETE 
-
--Bearer Token  <br />
--Param socialMediaId
+DELETE SocialMedia
+Diperlukan:
+- Bearer Token  <br />
+- Param socialMediaId
 
 
 > Note: Seluruh method diperlukan autorisasi, yang mana perlu memasukan Bearer Token terlebih dahulu. Token didapatkan melalui response pengguna saat melakukan login. Untuk method PUT dan DELETE hanya bisa dilakukan oleh pengguna yang mengunggah sosial media pada URL dan perlu menyertakan parameter Id sosial media tersebut.
