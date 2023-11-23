@@ -10,7 +10,7 @@ import (
 
 func InitDB() *gorm.DB {
 
-	dsn := "host=" + os.Getenv("PGHOST") + " user=" + os.Getenv("PGUSER") + " password=" + os.Getenv("PGPASSWORD") + " dbname=" + os.Getenv("PGNAME") + " port=" + os.Getenv("PGPORT") + " sslmode=disable TimeZone=Asia/Jakarta"
+	dsn := "host=" + os.Getenv("PGHOST") + " user=" + os.Getenv("PGUSER") + " password=" + os.Getenv("PGPASSWORD") + " dbname=" + os.Getenv("PGDATABASE") + " port=" + os.Getenv("PGPORT") + " sslmode=disable TimeZone=Asia/Jakarta"
 	var err error
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
