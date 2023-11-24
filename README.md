@@ -1,6 +1,6 @@
 # MSIB5 Hacktiv8 - Final Project 2: MyGram
 
-Berikut ini merupakan pengerjaan final project ke-2 dari Hacktiv8. Aplikasi ini bernama bernama MyGram, yang mana pengguna aplikasi ini dapat mengunggah foto dan membuat komentar untuk foto dari pengguna lain. Aplikasi ini akan dilengkapi dengan proses CRUD.
+Berikut ini merupakan pengerjaan final project ke-2 dari Hacktiv8. Aplikasi ini bernama bernama MyGram, yang mana pengguna aplikasi ini dapat mengunggah foto dan membuat komentar untuk foto yang diunggah oleh pengguna lain. Aplikasi ini dilengkapi dengan proses CRUD dalam penggunaannya.
 
 ## Nama
  - Arrayyan Alaya Azzamachzachrie - GLNG-KS07-024
@@ -22,7 +22,7 @@ Di bawah ini merupakan semua endpoint yang dapat diakses di aplikasi ini.
 | ------ | ------ |
 | POST | [https://msib5-hacktiv8-mygram.up.railway.app/users/register] |
 | POST | [https://msib5-hacktiv8-mygram.up.railway.app/users/login] |
-| PUT | [https://msib5-hacktiv8-mygram.up.railway.app/users] |
+| PUT | [https://msib5-hacktiv8-mygram.up.railway.app/users/:id] |
 | DELETE | [https://msib5-hacktiv8-mygram.up.railway.app/users] |
 
 ###### Prosedur request users
