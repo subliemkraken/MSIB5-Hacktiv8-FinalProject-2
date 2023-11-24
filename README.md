@@ -1,6 +1,6 @@
 # MSIB5 Hacktiv8 - Final Project 2: MyGram
 
-Berikut ini merupakan pengerjaan final project ke-2 dari Hacktiv8. Aplikasi ini bernama bernama MyGram, yang mana pengguna aplikasi ini dapat mengunggah foto dan membuat komentar untuk foto yang diunggah oleh pengguna lain. Aplikasi ini dilengkapi dengan proses CRUD dalam penggunaannya.
+Berikut ini merupakan aplikasi yang bernama MyGram, yang mana pengguna aplikasi ini dapat mengunggah foto dan membuat komentar untuk foto yang diunggah oleh pengguna lain. Aplikasi ini dilengkapi dengan proses CRUD dalam penggunaannya.
 
 ## Nama
  - Arrayyan Alaya Azzamachzachrie - GLNG-KS07-024
